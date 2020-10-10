@@ -17,6 +17,7 @@ public class Logic extends PApplet {
 		
 		//cargo texto
 		textfg=app.loadStrings("txt/text.txt");
+		createFigure();
 	}
 	
 	public void createFigure() {
@@ -37,4 +38,14 @@ public class Logic extends PApplet {
 			}
 		}
 	}
+
+	public ArrayList<Figure> getFigure() {
+		return figure;
+	}
+
+	public void setFigure(ArrayList<Figure> figure) {
+		this.figure = figure;
+	}
+	
+	
 }
