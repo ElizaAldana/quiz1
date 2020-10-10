@@ -19,10 +19,10 @@ public abstract class Figure {
 	
 	public void moveX(){
 		if(this.posY<=0) {
-			this.dir=this.dir*-1;
+			this.posY = 450;
 		}
 		if(this.posY>=500) {
-			this.dir=this.dir*-1;
+			this.posY = 0;
 		}
 		this.posY += 2 *dir;
 		
